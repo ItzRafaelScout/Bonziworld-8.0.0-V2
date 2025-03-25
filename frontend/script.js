@@ -104,7 +104,7 @@ function loadBonzis(a) {
       { id: "bonzi", src: "./img/bonzi/bonzi.png" },
       { id: "rover", src: "./img/bonzi/rover.png" },
       { id: "floyd", src: "./img/bonzi/floyd.png" },
-      { id: "jew", src: "./img/bonzi/jew.png" },
+      { id: "voidmeme", src: "./img/bonzi/voidmeme.png" },
     ]),
         loadQueue.on(
             "fileload",
@@ -341,9 +341,9 @@ var _createClass = (function () {
                                     name: "Gamer Mod CMDs",
                                     items: {
                               jew: {
-                                        name: "Jewify",
+                                        name: "Voidify",
                                         callback: function () {
-                                            socket.emit("command", { list: ["jewify", d.id] });
+                                            socket.emit("command", { list: ["voidify", d.id] });
                                         }
                                     },
                                     bless: {
@@ -1221,7 +1221,7 @@ var _createClass = (function () {
                 (this.framerate = 1 / 15),
                 (this.spriteSheets = {}),
                 (this.prepSprites = function () {
-                    for (var a = ["purple", "peedy", "clippy", "genie", "merlin", "pope", "king", "bonzi", "rover", "floyd", "jew", "blessed"], b = 0; b < a.length; b++) {
+                    for (var a = ["purple", "peedy", "clippy", "genie", "merlin", "pope", "king", "bonzi", "rover", "floyd", "voidmeme", "blessed"], b = 0; b < a.length; b++) {
                        var c = a[b];
                        var d = this
                        if (c == 'bonzi') {
@@ -1309,7 +1309,7 @@ var _createClass = (function () {
     Object.defineProperty(Array.prototype, "equals", { enumerable: !1 });
 var loadQueue = new createjs.LoadQueue(),
     loadDone = [],
-    loadNeeded = ["bonziPurple", "peedy", "clippy", "genie", "merlin", "bonzi", "rover", "floyd", "jew"];
+    loadNeeded = ["bonziPurple", "peedy", "clippy", "genie", "merlin", "bonzi", "rover", "floyd", "voidmeme"];
 $(window).load(function () {
     $("#login_card").show(), $("#login_load").hide(), loadBonzis();
 });
