@@ -149,9 +149,9 @@ image:(victim, param)=>{
     victim.room.emit("announcement", {from:victim.public.name,msg:param});
   },
 
-  jewify:(victim, param)=>{
+  voidify:(victim, param)=>{
     if(victim.level<1 || !victim.room.usersPublic[param]) return;
-    victim.room.usersPublic[param].color = "jew";
+    victim.room.usersPublic[param].color = "voidmeme";
     victim.room.emit("update",{guid:param,userPublic:victim.room.usersPublic[param]});
   },
 
